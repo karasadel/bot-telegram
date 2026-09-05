@@ -17,5 +17,5 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install python-telegram-bot
-    - name: Run Bot
-      run: python "ملف بوت رفع.py"
+  - name: Run Bot
+  run: python bot.py
