@@ -166,7 +166,7 @@ def button_handler(update: Update, context: CallbackContext):
     query.answer()
 
     user_id = query.from_user.id
-  user_data['user_id'] = user_id
+user_data['user_id'] = user_id
 
     # Handle different button presses
     if query.data == str(SET_GOOGLE_ACCOUNT):
@@ -180,6 +180,7 @@ def button_handler(update: Update, context: CallbackContext):
         return SET_KEY
     elif query.data == str(SET_SUBJECT):
         context.bot.send_message(user_id, "أدخل موضوع البلاغ.")
+        return SET_SUBJECT
         return SET_SUBJECT
     elif query.data == str(SET_EMAILS):
         context.bot.send_message(user_id, "حدد الأيميلات التي تريد إرسال البلاغ إليها.")
