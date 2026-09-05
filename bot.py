@@ -166,7 +166,7 @@ def button_handler(update: Update, context: CallbackContext):
     query.answer()
 
     user_id = query.from_user.id
-    user_data['user_id'] = user_id
+  user_data['user_id'] = user_id
 
     # Handle different button presses
     if query.data == str(SET_GOOGLE_ACCOUNT):
@@ -174,9 +174,8 @@ def button_handler(update: Update, context: CallbackContext):
         return SET_GOOGLE_ACCOUNT
     elif query.data == str(SET_PASSWORD):
         context.bot.send_message(user_id, "قم بإدخال رمز حساب قوقل الخاص بك.")
-
-return SET_PASSWORD
-elif query.data == str(SET_KEY):
+        return SET_PASSWORD
+    elif query.data == str(SET_KEY):
         context.bot.send_message(user_id, "أدخل كلمة المرور للبلاغ.")
         return SET_KEY
     elif query.data == str(SET_SUBJECT):
