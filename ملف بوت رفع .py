@@ -84,7 +84,7 @@ def button_handler(update: Update, context: CallbackContext):
 # ...
 
 # Start the bot
-updater = Updater(token='YOUR_BOT_TOKEN', use_context=True)
+updater = Updater(token='6246082183:AAGeoKt_cEg34oDNlUuGvATV-pNtwzCvzQo', use_context=True)
 dispatcher = updater.dispatcher
 
 conv_handler = ConversationHandler(
